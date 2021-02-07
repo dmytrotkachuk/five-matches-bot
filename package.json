@@ -1,0 +1,23 @@
+{
+  "name": "fivematchesbot",
+  "version": "1.0.0",
+  "description": "Telegram bot to get a data of the 5 nearest matches from uwatch.live",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "telegramAPI",
+    "bot"
+  ],
+  "author": "Dmytro Tkachuk <dmytrotkachuk.dev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "graphql-request": "^3.4.0",
+    "mongoose": "^5.11.15",
+    "node-telegram-bot-api": "^0.51.0"
+  }
+}
