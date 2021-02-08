@@ -130,6 +130,7 @@ bot.on('callback_query', async ({ from: { id }, data }) => {
     //can vote if user has not voted yet
     await MatchController.updateVoteCounter(matchId, vote)
     bot.sendMessage(id, 'Cпасибо, ваш голос учтен!')
+    return
   }
 
   if (vote === 'player') {
@@ -140,5 +141,6 @@ bot.on('callback_query', async ({ from: { id }, data }) => {
     }
     await MatchController.updateVoteCounter(matchId, vote)
     bot.sendMessage(id, 'Cпасибо, ваш голос учтен!')
+    return
   }
 })
